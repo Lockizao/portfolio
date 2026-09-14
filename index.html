@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Felipe — Full Stack Developer</title>
+    <meta name="description" content="Portfólio de Matheus Felipe, desenvolvedor Full Stack: projetos reais em produção, código aberto e contato.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Manrope:wght@400;500;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-nav">
+    <div class="interface">
+        <a href="#topo" class="prompt-logo"><span class="user">matheus</span>@dev<span class="cursor"></span></a>
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="#projetos">projetos</a></li>
+                <li><a href="#sobre">sobre</a></li>
+                <li><a href="#contato">contato</a></li>
+            </ul>
+        </nav>
+        <a href="#contato" class="btn btn-primary nav-cta">Falar comigo</a>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero" id="topo">
+        <div class="parallax-field" id="parallaxField" aria-hidden="true"></div>
+        <div class="interface">
+            <div>
+                <span class="eyebrow">disponível para novos projetos</span>
+                <h1>Transformo ideias em <span class="accent-word">software que roda de verdade</span>.</h1>
+                <p class="hero-lede">
+                    Sou Matheus Felipe, desenvolvedor Full Stack. Gosto de pegar um problema real — meu, ou de um
+                    cliente — e sair do outro lado com algo publicado, testado e funcionando em produção. Não só protótipo bonito.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+                    <a href="https://github.com/Lockizao" target="_blank" rel="noopener" class="btn">GitHub ↗</a>
+                </div>
+            </div>
+
+            <div class="terminal">
+                <div class="terminal-titlebar">
+                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    <span class="filename">~/matheus — zsh</span>
+                </div>
+                <div class="terminal-body" id="terminalBody">
+                    <div class="line"><span class="prompt-symbol">$</span><span class="typed" id="typedLine"></span><span class="terminal-cursor"></span></div>
+                    <div class="out" id="typedOutput" hidden>
+                        <div><span class="k">stack:</span> FastAPI · Angular · Node.js · PostgreSQL</div>
+                        <div><span class="k">status:</span> 4 projetos publicados, sempre codando mais um</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <div class="interface">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">git log --projetos</span>
+                    <h2>O que já está no ar</h2>
+                </div>
+                <p class="section-note">Projetos reais, não exercícios de tutorial. A lista cresce — esse portfólio é vivo.</p>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <h3>MEI Lembretes</h3>
+                        <span class="status-pill online">online</span>
+                    </div>
+                    <p class="project-desc">
+                        App pessoal pra nunca mais esquecer o DAS-MEI: lembra de pagar, de emitir a nota fiscal
+                        e confirma se o pagamento caiu. Notificações via Web Push direto no navegador/celular.
+                    </p>
+                    <div class="stack-tags">
+                        <span>FastAPI</span><span>Angular PWA</span><span>PostgreSQL</span><span>Web Push</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://meilembretes-app.onrender.com" target="_blank" rel="noopener">Ver ao vivo ↗</a>
+                        <a href="https://github.com/Lockizao/meilembretes" target="_blank" rel="noopener">Código-fonte</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <h3>AI Issue Buddy</h3>
+                        <span class="status-pill proto">protótipo</span>
+                    </div>
+                    <p class="project-desc">
+                        Painel que lê issues longas do GitHub (com todos os comentários) e devolve um score de
+                        prioridade de 1 a 10 com resumo executivo, usando a API do Gemini.
+                    </p>
+                    <div class="stack-tags">
+                        <span>Next.js</span><span>TypeScript</span><span>Gemini API</span><span>Octokit</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Lockizao/PROJETO-AI-ISSUE-BUDDY-" target="_blank" rel="noopener">Código-fonte ↗</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <h3>To-Do List API</h3>
+                        <span class="status-pill proto">API</span>
+                    </div>
+                    <p class="project-desc">
+                        Back-end REST completo de lista de tarefas: autenticação com JWT, senha com hash,
+                        e cada usuário só acessa as próprias tarefas. Testado ponta a ponta.
+                    </p>
+                    <div class="stack-tags">
+                        <span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Lockizao/PROJETO-TO-DO-LIST" target="_blank" rel="noopener">Código-fonte ↗</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <h3>Primeiro Sinal</h3>
+                        <span class="status-pill online">jogável</span>
+                    </div>
+                    <p class="project-desc">
+                        Simulador de vida escolar em 3D, câmera em terceira pessoa, num único arquivo HTML
+                        autocontido — sem build, sem servidor. Inspirado nos jogos sandbox do mDickie.
+                    </p>
+                    <div class="stack-tags">
+                        <span>Three.js</span><span>JavaScript</span><span>HTML5</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://lockizao.github.io/primeiro-sinal-the-game/" target="_blank" rel="noopener">Jogar agora ↗</a>
+                        <a href="https://github.com/Lockizao/primeiro-sinal-the-game" target="_blank" rel="noopener">Código-fonte</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="projects-footnote">// mais projetos a caminho — este arquivo recebe commits com frequência.</p>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="interface">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">cat sobre.md</span>
+                    <h2>Quem escreve esse código</h2>
+                </div>
+            </div>
+
+            <div class="skills-layout">
+                <div class="about-copy">
+                    <p>
+                        Sou desenvolvedor Full Stack, focado em sair da teoria e publicar coisa que funciona.
+                        Cada projeto acima nasceu de um problema real — meu próprio DAS-MEI atrasado, uma issue
+                        gigante que eu não tinha paciência de ler inteira, uma vontade de entender autenticação
+                        de verdade.
+                    </p>
+                    <p>
+                        Gosto de trabalhar em cima de causa raiz: quando algo quebra, prefiro entender o porquê
+                        antes de só remendar. Isso vale tanto pra código quanto pra dado — trago essa mesma
+                        rigidez de investigação pros dois lados.
+                    </p>
+                </div>
+
+                <div class="code-block">
+                    <div class="terminal-titlebar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                        <span class="filename">package.json</span>
+                    </div>
+                    <pre>{
+  <span class="k">"nome"</span>: <span class="s">"Matheus Felipe"</span>,
+  <span class="k">"cargo"</span>: <span class="s">"Full Stack Developer"</span>,
+  <span class="k">"dependencies"</span>: {
+    <span class="k">"backend"</span>: [<span class="s">"Node.js"</span>, <span class="s">"Express"</span>, <span class="s">"FastAPI"</span>],
+    <span class="k">"frontend"</span>: [<span class="s">"React"</span>, <span class="s">"Angular"</span>, <span class="s">"Next.js"</span>],
+    <span class="k">"dados"</span>: [<span class="s">"PostgreSQL"</span>, <span class="s">"MongoDB"</span>],
+    <span class="k">"outros"</span>: [<span class="s">"JWT"</span>, <span class="s">"REST APIs"</span>, <span class="s">"Git"</span>]
+  },
+  <span class="k">"aprendendo_agora"</span>: [<span class="s">"IA aplicada a produto"</span>]
+}</pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="interface">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">POST /contato</span>
+                    <h2>Vamos conversar</h2>
+                </div>
+                <p class="section-note">Respondo rápido — o formulário cai direto na minha caixa de entrada.</p>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-channels">
+                    <a class="channel" href="https://wa.me/5581984181507?text=Olá,%20vim%20do%20seu%20portfólio%20e%20gostaria%20de%20mais%20informações%20sobre%20seus%20projetos." target="_blank" rel="noopener">
+                        <span class="glyph">➜</span>
+                        <span>
+                            <span class="label">WhatsApp</span><br>
+                            <span class="value">Chamar no direto</span>
+                        </span>
+                    </a>
+                    <a class="channel" href="mailto:matheusdesenvolver@gmail.com">
+                        <span class="glyph">@</span>
+                        <span>
+                            <span class="label">E-mail</span><br>
+                            <span class="value">matheusdesenvolver@gmail.com</span>
+                        </span>
+                    </a>
+                    <a class="channel" href="https://www.linkedin.com/in/lockizao/" target="_blank" rel="noopener">
+                        <span class="glyph">in</span>
+                        <span>
+                            <span class="label">LinkedIn</span><br>
+                            <span class="value">/in/lockizao</span>
+                        </span>
+                    </a>
+                    <a class="channel" href="https://github.com/Lockizao" target="_blank" rel="noopener">
+                        <span class="glyph">gh</span>
+                        <span>
+                            <span class="label">GitHub</span><br>
+                            <span class="value">@Lockizao</span>
+                        </span>
+                    </a>
+                </div>
+
+                <form class="contact-form" action="https://formsubmit.co/matheusdesenvolver@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Novo contato pelo portfólio">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <div class="field">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="interface">
+        <span>© 2026 Matheus Felipe — feito com HTML, CSS e café.</span>
+        <div class="socials">
+            <a href="https://github.com/Lockizao" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+            <a href="https://www.linkedin.com/in/lockizao/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+            <a href="https://www.instagram.com/lockizao/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+            <a href="https://www.youtube.com/@lockizao" target="_blank" rel="noopener" aria-label="YouTube">YouTube</a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
